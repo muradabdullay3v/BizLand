@@ -228,14 +228,10 @@ body{
       }
       a{
           text-decoration: none;
-          margin-left: 20px;
           margin-top: 10px;
           color: rgb(70, 70, 70);
           font-weight: 500;
           font-size: 16px;
-          span{
-              margin-left: 10px;
-          }
           i{
               font-size: 32px;
               margin-top: 15px;
@@ -251,6 +247,7 @@ body{
   .about_summary{
       max-width: 700px;
       margin: 0 auto;
+      margin-bottom: 35px;
       text-align: center;
       .about_sign{
           padding: 7px 16px;
@@ -270,3 +267,184 @@ body{
           }
       }
   }
+
+  .watch_video{
+    display: inline-block;
+    height: 50px;
+    margin-left: 10px;
+    .fa-circle-play{
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+    }
+  }
+
+  .about_context{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    .about_image{
+        img{
+            max-width: 636px;
+        }
+    }
+    .about_title{
+        margin-top: 20px;
+        color: rgb(61, 61, 61);
+    }
+    .about_description{
+        margin-top: 10px;
+        font-style: oblique;
+        color: rgb(70, 70, 70);
+    }
+    .about_features{
+        margin: 40px 0;
+    }
+    .about_features-item{
+        display: flex;
+        margin-bottom: 20px;
+        i{
+            position: relative;
+            top: 5px;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 20px;
+            background-color: #fff;
+            color: #106EEA;
+            box-shadow: 1px 1px 20px -10px gray;
+        }
+    }
+    .about_features-item_icon{
+        margin-right: 15px;
+    }
+  }
+
+  .about_features-title{
+    color: rgb(77, 77, 77);
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .about_features_description{
+    font-size: 14.5px;
+    font-weight: 400;
+    color: rgb(73, 73, 73);
+    margin-top: 10px;
+  }
+
+  .about_article{
+    color: rgb(59, 59, 59);
+    margin-top: 50px;
+    h3{
+        font-weight: 400;
+        font-size: 16px;
+    }
+  }
+
+  @media screen and(max-width:1400px){
+    .about_context{
+        .about_image{
+            img{
+                max-width: 546px;
+            }
+        }
+    }
+  }
+  @media screen and(max-width:1200px){
+    .about_context{
+        .about_image{
+            img{
+                max-width: 456px;
+            }
+        }
+    }
+  }
+
+  @media screen and(max-width:992px){
+    .about_context{
+        grid-template-columns: auto;
+        justify-content: center;
+        .about_image{
+            img{
+                max-width: 100%;
+            }
+        }
+  }
+}
+
+#team{
+    padding-bottom: 50px;
+}
+
+.team_text{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    .team_sign{
+        margin-bottom: 10px;
+        h4{
+            background-color: #E7F1FD;
+            padding: 7px 16px;
+            display: inline-block;
+            border-radius: 40px;
+            color: #106EEA;
+            font-size: 14px;
+            font-weight:600;
+        }
+    }
+    .team_title{
+        font-size:30px; 
+        color: rgb(82, 82, 82);
+        font-weight: 600;
+        margin-bottom: 10px;
+        span{
+            color: #106EEA;
+        }
+     }
+     p{
+        color: rgb(70, 70, 70);
+        font-weight: 500;
+        margin-bottom: 40px;
+     }
+}
+
+.team_cards{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    .team_cards-item{
+        padding-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px 1px rgb(224, 224, 224);
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.team_card-name{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.position{
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(138, 138, 138);
+}
+
+@media screen and(max-width:992px) {
+    .team_cards{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and(max-width:767px) {
+    .team_cards{
+        grid-template-columns: auto;
+    }
+}
